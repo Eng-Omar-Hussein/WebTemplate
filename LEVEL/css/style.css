@@ -1,0 +1,378 @@
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr 100px 100px 100px 100px 100px;
+    text-transform: capitalize;
+    font-size: x-large;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    margin-left: 100px;
+}
+.menu,  
+.login, 
+.signin,
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-left: solid #00000038 1px;
+    transition: 300ms;
+}
+.signin {
+    border-right: solid #00000038 1px;
+}
+nav div:not(:first-child):hover {
+    transform: translate(5px);
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+nav div:first-child {
+    font-weight: bold;
+}
+
+img {
+    width: 27px;
+    margin: 7px;
+}
+.logo span:first-child {
+    width: 42px;
+    display: flex;
+    background-color: red;
+    justify-content: center;
+    border-radius: 50%;
+}
+.logo span:last-child {
+    padding-left: 7px;
+}
+header section {
+    padding: 150px;
+    background-image: url(../image/SBKjnxm.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+.form {
+    background: white;
+    width: fit-content;
+    padding: 45px 38px;
+    display: grid;
+    grid-template-rows: repeat(2,50px) 33px;
+    grid-template-columns: repeat(9,100px);
+}
+input[type="text"] {
+    grid-column: 1/4;
+    padding: 10px;
+    margin: 2px;
+}
+input.start {
+    grid-column: 4/7;
+    padding: 10px;
+    margin: 2px;
+}
+input.end {
+    grid-column: 7/10;
+    padding: 10px;
+    margin: 2px;
+}
+select#gender {
+    grid-column: 1/3;
+    padding: 10px;
+    margin: 2px;
+}
+select#room {
+    grid-column: 3/5;
+    padding: 10px;
+    margin: 2px;
+}
+input[type="number"] {
+    grid-column: 5/7;
+    padding: 10px;
+    margin: 2px;
+}
+button {
+    grid-column: 7/10;
+    padding: 10px;
+    margin: 2px;
+    background-color: red;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+}
+button:hover {
+    background-color: #d50303;
+    cursor: pointer;
+}
+.form div:last-child {
+    grid-column: 1/10;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+div p:last-child {
+    color: red;
+}
+header footer {
+    background-color: red;
+    color: white;
+    text-transform: capitalize;
+}
+header footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header footer::after {
+    content: "";
+    width: 100%;
+    height: 33px;
+    background-color: red;
+    border-radius: 0 0 50% 50%;
+    transform: translateY(51%);
+}
+header h1 {
+    margin: 0;
+    padding-top: 37px;
+}
+header h4 {
+    margin: 10px 0px;
+}
+header h5 {
+    margin-bottom: 0px;
+    margin-top: 5px;
+    border-style: solid;
+    border-bottom-color: transparent;
+    padding: 7px 22px;
+}
+header .content {
+    display: grid;
+    grid-template-columns: auto repeat(3,390px) auto;
+    grid-template-rows: 150px 300px 130px;
+    overflow: hidden;
+}
+.content div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    text-align: center;
+}
+.content>div:first-child{
+    grid-area: 2/2;
+    transition: 300ms;
+}
+.content>div:nth-child(2){
+    grid-area: 2/3;
+    transition: 300ms;
+}
+
+.content>div:last-child{
+    grid-area: 2/4;
+    transition: 300ms;
+}
+.content>div:first-child:hover,
+.content>div:nth-child(2):hover,
+.content>div:last-child:hover{
+    transform: translateY(20px);
+    border: solid 1px rgb(223, 221, 221);
+}
+
+.content>div :not(p) {
+    color: red;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.content>div p {
+    margin: 0px 0px 26px 0px;
+}
+.content>div i {
+    font-size: 80px;
+}
+section header {
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+}
+.css1 {
+    padding: 0px;
+    margin: 44px 2px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.css2 {
+    padding: 20px 40px;
+}
+.css2 h4 {
+    background-color: red;
+    color: white;
+    padding: 10px 20px 0px 20px;
+    margin: 0;
+}
+.css2 h5 {
+    background-color: red;
+    color: white;
+    padding: 0px 20px 10px 20px;
+    margin: 0;
+    border: none;
+}
+.css2:last-child {
+    background-color: white;
+    padding: 0px;
+    margin: 44px 25px;
+}
+.css5 {
+    margin: 12px 19px;
+    text-transform: uppercase;
+    background-color: #ecebeb7a;
+    display: flex;
+    align-items: center;
+}
+.css5>img {
+    width: 84px;
+    margin: 0px;
+}
+.css5>span {
+    margin: 0px 15px;
+}
+section>img {
+    margin: 0;
+    width: 100%;
+    height: 400px;
+}
+.css1>img {
+    width: 100%;
+    margin: 0px 13px;
+    height: 206px;
+}
+.css1>div {
+    width: 85%;
+    padding-bottom: 20px;
+    margin: 0px -347px;
+}
+.css1>div :last-child {
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+}
+section section {
+    background-image: url(../image/bg-img-2.jpg);
+    background-size: cover;
+    padding: 1px;
+    height: 850px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+section section>div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 30%;
+}
+section section div h1 {
+    color: black;
+    font-size: 40px;
+    margin: 0;
+    margin-right: 10px;
+}
+section section div h2 {
+    color: red;
+    margin: 0;
+}
+section section>div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 36% 0px 10%;
+    overflow: hidden;
+}
+section section>div:last-child>div {
+    border: ridge 2px #95929217;
+}
+.css6 {
+    display: flex;
+}
+.css6>img {
+    width: 240px;
+    margin: 15px;
+}
+.css6>span {
+    padding-right: 27px;
+}
+section section>div:last-child>div>div:nth-child(2) img {
+    margin: 0px 15px;
+}
+.css6 span h3 {
+    color: red;
+    font-weight: bold;
+}
+.css6 span p {
+    color: black;
+}
+.css6 span a {
+    color: red;
+    text-decoration: none;
+}
+footer .first {
+    background-image: url(../image/bg-img-3.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.copywrite {
+    background-color: #1f3646;
+    text-align: center;
+    color: white;
+}
+.map {
+    margin: 100px;
+}
+.map img {
+    width: 100%;
+    opacity: 0.5;
+}
+.mail {
+    margin: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mail form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background-color: white;
+    padding: 24px;
+    opacity: 0.5;
+}
+.mail form input[type="text"]{
+    margin: 5px 10px;
+    padding: 12px;
+    border: none;
+    background: aliceblue;
+}
+textarea {
+    margin: 5px 10px;
+    padding: 12px;
+    border: none;
+    background-color: aliceblue;
+}
+.mail section button{
+    margin: 5px 10px;
+    padding: 13px;
+}
+.mail form:hover,
+.map img:hover {
+    opacity: 1;
+}
